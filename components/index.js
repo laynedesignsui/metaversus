@@ -1,3 +1,5 @@
+//? this code allows these components to be imported and used throughout a web application
+
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';

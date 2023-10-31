@@ -1,3 +1,5 @@
+//? motion variants
+
 export const navVariants = {
   hidden: {
     opacity: 0,

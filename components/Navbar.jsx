@@ -1,9 +1,13 @@
-'use client';
+//? component for a website navigation bar
 
-import { motion } from 'framer-motion';
-
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
+//! CLIENT SIDE RENDERING
+"use client";
+//! MOTION IMPORT
+import { motion } from "framer-motion";
+//! MOTION VARIANTS
+import { navVariants } from "../utils/motion";
+//! STYLE IMPORT
+import styles from "../styles";
 
 const Navbar = () => (
   <motion.nav
@@ -11,11 +15,10 @@ const Navbar = () => (
     initial="hidden"
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
+    viewport={{ once: true }}
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
-    <div
-      className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
-    >
+    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <img
         src="/search.svg"
         alt="search"

@@ -1,3 +1,5 @@
+//? These are various data arrays used to store information for different parts of a web application
+
 export const exploreWorlds = [
   {
     id: 'world-1',

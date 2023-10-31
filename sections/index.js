@@ -1,3 +1,5 @@
+//? this code allows these components to be imported and used throughout a web application
+
 import Hero from './Hero';
 import About from './About';
 import Explore from './Explore';
