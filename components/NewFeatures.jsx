@@ -1,7 +1,7 @@
-//? used to create feature sections. It includes an icon, title, and is intended for displaying and describing new features or content
+// used to create feature sections. It includes an icon, title, and is intended for displaying and describing new features or content
 
-//! STYLE IMPORT
-import styles from "../styles";
+// STYLE IMPORT
+import styles from '../styles';
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1 flex flex-col sm:maw-w-[250px]min-w-[210px[">

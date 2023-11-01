@@ -1,7 +1,7 @@
 // this code assembles different sections of a web page, including a navigation bar, hero, about, explore, get started, world, insights, feedback, and a footer, creating a complete web page layout
 
 // COMPONENT IMPORTS
-import { Footer, Navbar } from "../components";
+import { Footer, Navbar } from '../components';
 // SECTION IMPORTS
 import {
   About,
@@ -12,7 +12,7 @@ import {
   Insights,
   WhatsNew,
   World,
-} from "../sections";
+} from '../sections';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">

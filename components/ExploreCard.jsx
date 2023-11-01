@@ -1,19 +1,19 @@
-//? this code creates an interactive card with dynamic animations. Depending on its active state, it either displays a large card or a smaller card
+'use client';
 
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORT
-import { motion } from "framer-motion";
-//! STYLES IMPORT
-import styles from "../styles";
-//! MOTION VARIANT
-import { fadeIn } from "../utils/motion";
+// this code creates an interactive card with dynamic animations. Depending on its active state, it either displays a large card or a smaller card
+
+// MOTION IMPORT
+import { motion } from 'framer-motion';
+// STYLES IMPORT
+import styles from '../styles';
+// MOTION VARIANT
+import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
-    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
-      active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
+      active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >

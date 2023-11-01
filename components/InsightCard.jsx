@@ -1,10 +1,10 @@
-//? is used to create a card displaying insights or information about a topic
-
-//! CLIENT SIDE RENDERING
 'use client';
-//! MOTION IMPORT
+
+// is used to create a card displaying insights or information about a topic
+
+// MOTION IMPORT
 import { motion } from 'framer-motion';
-//! MOTION VARIANTS
+// MOTION VARIANTS
 import { fadeIn } from '../utils/motion';
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
@@ -27,9 +27,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
         </p>
       </div>
 
-      <div
-        className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
-      >
+      <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
         <img
           src="/arrow.svg"
           alt="arrow"

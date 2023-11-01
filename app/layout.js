@@ -1,6 +1,6 @@
-//? sets up a basic layout for web pages, importing global styles and defining a root layout component that includes preconnect links and font styles
+// sets up a basic layout for web pages, importing global styles and defining a root layout component that includes preconnect links and font styles
 
-//! Global Styles Page
+// Global Styles Page
 import '../styles/globals.css';
 
 const RootLayout = ({ children }) => (

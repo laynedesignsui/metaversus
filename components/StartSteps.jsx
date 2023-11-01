@@ -1,7 +1,7 @@
-//? used to create step-by-step instructions or guidelines
+// used to create step-by-step instructions or guidelines
 
-//! IMPORT STYLES
-import styles from "../styles";
+// IMPORT STYLES
+import styles from '../styles';
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>

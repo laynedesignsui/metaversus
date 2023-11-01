@@ -1,13 +1,13 @@
-//? component for a website navigation bar
+'use client';
 
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORT
-import { motion } from "framer-motion";
-//! MOTION VARIANTS
-import { navVariants } from "../utils/motion";
-//! STYLE IMPORT
-import styles from "../styles";
+// component for a website navigation bar
+
+// MOTION IMPORT
+import { motion } from 'framer-motion';
+// MOTION VARIANTS
+import { navVariants } from '../utils/motion';
+// STYLE IMPORT
+import styles from '../styles';
 
 const Navbar = () => (
   <motion.nav

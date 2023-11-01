@@ -1,15 +1,15 @@
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORT
-import { motion } from "framer-motion";
-//! MOTION VARIANT
-import { staggerContainer } from "../utils/motion";
-//! IMPORT STYLES
-import styles from "../styles";
-//! COMPONENTS
-import { TitleText, TypingText, InsightCard } from "../components";
-//! CONSTANTS
-import { insights } from "../constants";
+'use client';
+
+// MOTION IMPORT
+import { motion } from 'framer-motion';
+// MOTION VARIANT
+import { staggerContainer } from '../utils/motion';
+// IMPORT STYLES
+import styles from '../styles';
+// COMPONENTS
+import { TitleText, TypingText, InsightCard } from '../components';
+// CONSTANTS
+import { insights } from '../constants';
 
 const Insights = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -17,7 +17,7 @@ const Insights = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: "false", amount: 0.25 }}
+      viewport={{ once: 'false', amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| Insight" textStyles="text-center" />

@@ -1,4 +1,4 @@
-//? motion variants
+// motion variants
 
 export const navVariants = {
   hidden: {

@@ -1,15 +1,15 @@
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORT
-import { motion } from "framer-motion";
-//! MOTION VARIANTS
-import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
-//! CONSTANTS
-import { startingFeatures } from "../constants";
-//! STYLE IMPORT
-import styles from "../styles";
-//! COMPONENTS
-import { StartSteps, TitleText, TypingText } from "../components";
+'use client';
+
+// MOTION IMPORT
+import { motion } from 'framer-motion';
+// MOTION VARIANTS
+import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+// CONSTANTS
+import { startingFeatures } from '../constants';
+// STYLE IMPORT
+import styles from '../styles';
+// COMPONENTS
+import { StartSteps, TitleText, TypingText } from '../components';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -17,11 +17,11 @@ const GetStarted = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: "false", amount: 0.25 }}
+      viewport={{ once: 'false', amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={planetVariants("left")}
+        variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
@@ -31,7 +31,7 @@ const GetStarted = () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
+        variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
         <TypingText title="| How Metaversus Works" />

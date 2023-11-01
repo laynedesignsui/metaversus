@@ -1,15 +1,15 @@
-//? code defines a component for a website footer that incorporates dynamic animations
+'use client';
 
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORTS
-import { motion } from "framer-motion";
-//! MAPPING CONSTANTS
-import { socials } from "../constants";
-//! STYLE IMPORT
-import styles from "../styles";
-//! MOTION VARIANTS
-import { footerVariants } from "../utils/motion";
+// code defines a component for a website footer that incorporates dynamic animations
+
+// MOTION IMPORTS
+import { motion } from 'framer-motion';
+// MAPPING CONSTANTS
+import { socials } from '../constants';
+// STYLE IMPORT
+import styles from '../styles';
+// MOTION VARIANTS
+import { footerVariants } from '../utils/motion';
 
 const Footer = () => (
   <motion.footer

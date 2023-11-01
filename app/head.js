@@ -1,4 +1,4 @@
-//? sets the title, viewport, and favicon for a web page, configuring essential metadata and styling information for a web application
+// sets the title, viewport, and favicon for a web page, configuring essential metadata and styling information for a web application
 
 const Head = () => (
   <>

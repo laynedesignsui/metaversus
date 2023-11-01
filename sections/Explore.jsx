@@ -1,22 +1,21 @@
-//! CLIENT SIDE RENDERING
-"use client";
-//! MOTION IMPORT
-import { motion } from "framer-motion";
-//! MOTION VARIANTS
-import { staggerContainer } from "../utils/motion";
-//! COMPONENT IMPORTS
-import { TypingText, ExploreCard, TitleText } from "../components";
-//! REACT IMPORTS
-import { useState } from "react";
-//! STYLE IMPORT
-import styles from "../styles";
-//! CONSTANTS
-import { exploreWorlds } from "../constants";
+'use client';
+
+// MOTION IMPORT
+import { motion } from 'framer-motion';
+// MOTION VARIANTS
+import { staggerContainer } from '../utils/motion';
+// COMPONENT IMPORTS
+import { TypingText, ExploreCard, TitleText } from '../components';
+// REACT IMPORTS
+import { useState } from 'react';
+// STYLE IMPORT
+import styles from '../styles';
+// CONSTANTS
+import { exploreWorlds } from '../constants';
 
 const Explore = () => {
-  
-  //? this useState is used to store the active world tab
-  const [active, setActive] = useState("world-2");
+  // this useState is used to store the active world tab
+  const [active, setActive] = useState('world-2');
 
   return (
     <section className={`${styles.paddings}`} id="explore">
@@ -32,7 +31,7 @@ const Explore = () => {
           title={
             <>
               Choose the world you want <br className="md:block hidden" /> to
-              explore{" "}
+              explore{' '}
             </>
           }
           textStyles="text-center"
